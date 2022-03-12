@@ -57,7 +57,7 @@ export default async (port: number, options: HttpOptions = {}): Promise<Http> =>
   }
 
   // The actual API routes
-  routesImporter(app, options?.routesImporter);
+  routesImporter(app);
 
   // Error/ response middlewares
   app.use(handleExpress404());
